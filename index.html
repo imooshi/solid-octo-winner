@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-width=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Home</title>
+</head>
+
+
+<body onload="startTime()">
+	<link rel="shortcut icon" type="image/png" href="./favicon.png">
+	<div class="sidebar-toggle" onclick="toggleSidebar()">
+			<span class="text"></span>
+			<span class="text"></span>
+			<span class="text"></span>
+		</div>
+	<div id="sidebar">
+		<div class="sidebar-top">
+			<div class="tabs">
+				<a href="#" class="tablinks tablink1" onclick="changeTab('notes1')" id="defaultOpen">Tab 1</a>
+				<a href="#" class="tablinks tablink2" onclick="changeTab('notes2')">Tab 2</a>
+				<a href="#" class="tablinks tablink3" onclick="changeTab('notes3')">Tab 3</a>
+				<hr>
+			</div>
+		</div>
+		<div class="notearea">
+			<textarea class="tabcontent" id="notes1" rows="8" cols="25" placeholder="Type some notes..." ></textarea>
+			<textarea class="tabcontent" id="notes2" rows="8" cols="25" placeholder="Type some notes..." ></textarea>
+			<textarea class="tabcontent" id="notes3" rows="8" cols="25" placeholder="Type some notes..." ></textarea>
+			<!img class="pen" src="pen.svg">
+		</div>
+	</div>
+	<div id="page">
+		<div id="clock">
+			<span id="date"></span>
+			<span class="slash">//</span>
+			<span id="time"></span>
+		</div>
+		<form class="search-box" method="GET" action="https://ddg.gg/" autocomplete="off">
+			<input type="text" name="q" placeholder="Search">
+			<span class="search-underline"></span>
+		</form>
+		<main>
+			<section>
+				<div class="box">
+					<span class="title">Stuff</span>
+					<a href="https://youtube.com/"><span class="links">Youtube</span></a>
+					<a href="https://youtube.com/feed/subscriptions"><span class="links">YT Subs</span></a>
+					<a href="https://mail.yandex.com"><span class="links">Yandex</span></a>
+					<a href="https://chocolatey.org"><span class="links">Chocolatey</span></a>
+					<a href="https://everipedia.org/"><span class="links">Everipedia</span></a>
+					<a href="https://news.ycombinator.com/newest"><span class="links">Hackernews</span></a>
+					<a href="https://invidio.us"><span class="links">Invidious</span></a>
+				</div>
+			</section>
+			<section>
+				<div class="box">
+					<a href="https://old.reddit.com/"><span class="title">Reddit</span></a>
+					<a href="https://old.reddit.com/r/pcmasterrace"><span class="links">PCMR</span></a>
+					<a href="https://old.reddit.com/r/pcgaming"><span class="links">PCgaming</span></a>
+					<a href="https://old.reddit.com/r/paradoxplaza"><span class="links">Paradoxplaza</span></a>
+				</div>
+			</section>
+			<section>
+				<div class="box">
+					<span class="title">Social</span></a>
+					<a href="https://discordapp.com/channels/@me"><span class="links">Discord</span></a>
+					<a href="https://mastodon.social/about"><span class="links">Mastodon</span></a>
+					<a href="https://minds.com"><span class="links">Minds</span></a>
+					<a href="https://gab.com"><span class="links">Gab</span></a>
+				</div>
+			</section>
+			<section>
+				<div class="box">
+					<span class="title">Shops etc</span></a>
+					<a href="https://amazon.co.uk"><span class="links">Amazon</span></a>
+					<a href="https://ebay.co.uk"><span class="links">Ebay</span></a>
+					<a href="https://isthereanydeal.com"><span class="links">Isthereanydeal</span></a>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
